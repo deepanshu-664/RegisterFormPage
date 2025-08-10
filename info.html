@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page 1 - Personal Info</title>
+  <link rel="stylesheet" href="page.css">
+</head>
+<body>
+  <div class="container">
+    <img src="https://www.technolit.in/_next/image?url=https%3A%2F%2Ffrequencycloud.blob.core.windows.net%2Ffrequencycloud%2F1752751918874-91492d9f-92bd-44a6-8301-81d71a92cd52.png&w=640&q=75" alt="Technolit Affluanza" class="logo">
+    <h2>Personal Info</h2>
+    <form action="upload.html" method="GET">
+      <input type="text" id="name" placeholder="Name"  required >
+      <input type="email" id="email" placeholder="Email"   required>
+      <input type="text" id="state" placeholder="State"   required>
+      <input type="text" id="city" placeholder="City"   required>
+      <input type="text" id="pin" placeholder="Pin Code"   required>
+      <textarea id="address" rows="3" placeholder="Address"   required></textarea>
+    <button type="button" onclick="window.location.href='module.html'">NEXT</button>
+    </form>
+  </div>
+  
+  <script>
+    function nextPage() {
+      const user = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        state: document.getElementById("state").value,
+        city: document.getElementById("city").value,
+        pin: document.getElementById("pin").value,
+        address: document.getElementById("address").value
+      };
+      localStorage.setItem("userData", JSON.stringify(user));
+      window.location.href = "upload.html";
+    }
+    const handleclick =()=>{
+      console.log("idhr")
+    }
+  </script>
+</body>
+</html>
+
+

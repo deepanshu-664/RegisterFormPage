@@ -1,0 +1,59 @@
+.logo{
+     position: absolute;
+     top: 20px;
+     right: 20px;
+     height: 50px;
+
+}
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+
+  border-radius: 4px;
+  
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  background-color: #410cf077;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color:#d9d1e4ab;
+  transition:cubic-bezier(0.77, 0, 0.175, 1)
+  
+
+}
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(https://i.pinimg.com/736x/c6/ac/49/c6ac49ff3534e8501b8f9fee141d5919.jpg);
+  background-position: center;
+  background-size: cover;
+  
+  margin: 0;
+  
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 50px;
+  background-image: url(https://i.pinimg.com/736x/c6/ac/49/c6ac49ff3534e8501b8f9fee141d5919.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  box-shadow: 0 0 100px rgba(0,0,0,0.1);
+  position: relative;
+}
+h2{
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
